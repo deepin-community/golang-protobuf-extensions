@@ -1,0 +1,6 @@
+version=3
+
+opts="filenamemangle=s/(?:.*\/)?v?(\d[\d\.]*)\.tar\.gz/golang-protobuf-extensions-$1.tar.gz/" \
+         https://github.com/matttproud/golang_protobuf_extensions/tags \
+         (?:.*/)?v?(\d[\d\.]*)\.tar\.gz
+
