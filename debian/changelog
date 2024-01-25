@@ -1,3 +1,55 @@
+golang-protobuf-extensions (1.0.4-2deepin1) unstable; urgency=medium
+
+  * Update dependency to golang-github-golang-protobuf-1-5-dev
+
+ -- xiangzelong <xiangzelong@deepin.org>  Thu, 25 Jan 2024 14:31:04 +0800
+
+golang-protobuf-extensions (1.0.4-2) unstable; urgency=medium
+
+  * Team upload
+  * Prefer golang-protobuf-1-5-dev over golang-protobuf-1-3-dev for better
+    compatibility with packages using protobuf >= 1.25
+
+ -- Daniel Swarbrick <dswarbrick@debian.org>  Wed, 28 Jun 2023 08:28:35 +0000
+
+golang-protobuf-extensions (1.0.4-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream release
+  * Replace dh-golang with dh-sequence-golang
+
+ -- Daniel Swarbrick <dswarbrick@debian.org>  Tue, 27 Jun 2023 17:27:05 +0000
+
+golang-protobuf-extensions (1.0.1-3) unstable; urgency=medium
+
+  * Team upload
+  * d/control:
+    - Update Section to golang
+    - Update Build-Depends on debhelper-compat to v13
+    - Replace transitional golang-goprotobuf-dev package
+    - Allow golang-github-golang-protobuf-1-5-dev as optional Depends
+    - Add Testsuite: autopkgtest-pkg-go
+    - Add Rules-Requires-Root: no
+    - Add Multi-Arch: foreign
+    - Bump Standards-Version (no changes needed)
+
+ -- Mathias Gibbens <gibmat@debian.org>  Mon, 02 Jan 2023 03:34:16 +0000
+
+golang-protobuf-extensions (1.0.1-2) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 11 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Remove constraints unnecessary since buster:
+    + Build-Depends: Drop versioned constraint on dh-golang and
+      golang-goprotobuf-dev.
+    + golang-protobuf-extensions-dev: Drop versioned constraint on
+      golang-goprotobuf-dev in Depends.
+
+ -- Jelmer Vernooĳ <jelmer@debian.org>  Sun, 27 Nov 2022 16:08:32 +0000
+
 golang-protobuf-extensions (1.0.1-1) unstable; urgency=medium
 
   * Team upload.
@@ -31,12 +83,12 @@ golang-protobuf-extensions (1.0.0-2) unstable; urgency=medium
   * Team upload.
   * Use a secure transport for the Vcs-Git and Vcs-Browser URL
 
-  [ Martín Ferrari ]
+  [ Martina Ferrari ]
   * debian/control: Fix Vcs-* fields.
   * debian/control: Replace golang-go with golang-any in Build-Depends.
   * Replace $DH_GOPKG with XS-Go-Import-Path.
 
- -- Martín Ferrari <tincho@debian.org>  Tue, 01 Nov 2016 01:24:39 +0000
+ -- Martina Ferrari <tina@debian.org>  Tue, 01 Nov 2016 01:24:39 +0000
 
 golang-protobuf-extensions (1.0.0-1) unstable; urgency=medium
 
@@ -45,40 +97,40 @@ golang-protobuf-extensions (1.0.0-1) unstable; urgency=medium
   * debian/control: updated Standards-Version with no changes; added
     XS-Go-Import-Path.
 
- -- Martín Ferrari <tincho@debian.org>  Thu, 19 May 2016 03:33:20 +0000
+ -- Martina Ferrari <tina@debian.org>  Thu, 19 May 2016 03:33:20 +0000
 
 golang-protobuf-extensions (0+git20150513.fc2b8d3-4) unstable; urgency=medium
 
   * debian/control: Migration to pkg-go team.
 
- -- Martín Ferrari <tincho@debian.org>  Fri, 21 Aug 2015 23:09:08 +0200
+ -- Martina Ferrari <tina@debian.org>  Fri, 21 Aug 2015 23:09:08 +0200
 
 golang-protobuf-extensions (0+git20150513.fc2b8d3-3) unstable; urgency=medium
 
   * Fix breakage introduced by namespace change in golang-goprotobuf-dev.
 
- -- Martín Ferrari <tincho@debian.org>  Sat, 27 Jun 2015 10:20:56 +0000
+ -- Martina Ferrari <tina@debian.org>  Sat, 27 Jun 2015 10:20:56 +0000
 
 golang-protobuf-extensions (0+git20150513.fc2b8d3-2) unstable; urgency=medium
 
   * Add missing binary dependency on golang-goprotobuf-dev.
 
- -- Martín Ferrari <tincho@debian.org>  Wed, 13 May 2015 15:26:17 +0100
+ -- Martina Ferrari <tina@debian.org>  Wed, 13 May 2015 15:26:17 +0100
 
 golang-protobuf-extensions (0+git20150513.fc2b8d3-1) unstable; urgency=medium
 
   * Updated to current upstream, which changes package naming.
 
- -- Martín Ferrari <tincho@debian.org>  Wed, 13 May 2015 14:20:13 +0100
+ -- Martina Ferrari <tina@debian.org>  Wed, 13 May 2015 14:20:13 +0100
 
 golang-protobuf-extensions (0+git20150225.ba7d65a-2) unstable; urgency=medium
 
   * Re-upload with corrected debian/copyright file.
 
- -- Martín Ferrari <tincho@debian.org>  Fri, 27 Feb 2015 00:44:49 +0000
+ -- Martina Ferrari <tina@debian.org>  Fri, 27 Feb 2015 00:44:49 +0000
 
 golang-protobuf-extensions (0+git20150225.ba7d65a-1) unstable; urgency=medium
 
   * Initial release. (Closes: #779235)
 
- -- Martín Ferrari <tincho@debian.org>  Thu, 26 Feb 2015 02:29:41 +0000
+ -- Martina Ferrari <tina@debian.org>  Thu, 26 Feb 2015 02:29:41 +0000
